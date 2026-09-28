@@ -1,0 +1,14 @@
+name: DropEvent
+version: '${project.version}'
+main: dev.dropevent.DropEventPlugin
+api-version: '1.21'
+description: Timed event that multiplies ore and mob drops.
+commands:
+  dropevent:
+    description: Start, stop or check the drop multiplier event.
+    usage: /dropevent <start [minutes] [multiplier]|stop|status>
+    permission: dropevent.admin
+permissions:
+  dropevent.admin:
+    description: Allows managing the drop event.
+    default: op
